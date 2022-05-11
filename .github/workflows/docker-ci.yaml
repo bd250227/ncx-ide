@@ -26,4 +26,4 @@ jobs:
             -t ghcr.io/bd250227/ncx-ide:latest \
             .
           docker push "ghcr.io/bd250227/ncx-ide:${SHORT_SHA}"
-          docker push ghcr.io/bd250227/ncx-ide:latest
+          docker push "ghcr.io/bd250227/ncx-ide:latest"
