@@ -11,8 +11,8 @@
         ">
         NCX
       </h2>
-      <EntitiesIDE />
-      <BusinessRulesIDE />
+      <p><a href="/ide/entities">Edit Entities</a></p>
+      <p><a href="/ide/rules">Edit Business Rules</a></p>
     </div>
   </div>
 </template>
