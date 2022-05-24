@@ -1,13 +1,11 @@
-name: Docker Image CI
+name: Push to Master
 
 on:
   push:
     branches: [master]
-  pull_request:
-    branches: [master]
-
+    
 jobs:
-  docker-push:
+  docker-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

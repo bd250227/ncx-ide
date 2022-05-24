@@ -8,13 +8,8 @@ services:
     working_dir: /app
     command: npm run dev
     environment:
+      # point to dev-only ingress
       - BUILD_SERVER_HOST=${TBD}
       - BUILD_SERVER_PORT=${TBD}
     ports:
       - 3000:3000
-    networks:
-      - public
-
-networks:
-  public:
-  private:
