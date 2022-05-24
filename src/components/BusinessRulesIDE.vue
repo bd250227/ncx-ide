@@ -128,7 +128,6 @@ import { ChevronUpIcon, PencilIcon } from "@heroicons/vue/solid";
 
 export default {
   components: {
-    EntitiesIDE,
     DocumentAddIcon,
     Disclosure,
     DisclosureButton,
