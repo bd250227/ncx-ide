@@ -5,7 +5,14 @@ on:
     branches: [master]
 
 jobs:
-  docker-push:
+  production-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build the PRODUCTION Docker image
+        run: |
+          docker build .
+  local-dev-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
