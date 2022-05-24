@@ -1,11 +1,11 @@
-name: Publish Docker Image
+name: Push to Master
 
 on:
   push:
     branches: [master]
     
 jobs:
-  docker-push:
+  docker-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
