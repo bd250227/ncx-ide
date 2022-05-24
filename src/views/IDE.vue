@@ -13,43 +13,8 @@
       >
         NCX
       </h2>
-      <section class="my-4 max-w-full">
-        <header
-          id="ncx-entities-header"
-          class="lg:flex lg:justify-between max-w-full"
-        >
-          <h3 class="sm:text-3xl">Entities Editor</h3>
-          <button
-            @click="addNewEntity"
-            class="
-              mt-4
-              lg:mt-0
-              mb-4
-              w-20
-              h-12
-              rounded-md
-              flex
-              justify-center
-              bg-green-600
-              items-center
-              hover:bg-green-400
-              focus:outline-none focus:ring focus:ring-green-300
-            "
-          >
-            <DocumentAddIcon class="h-8 w-8 text-slate-100" />
-          </button>
-        </header>
-        <section class=""></section>
-        <footer>
-          <a
-            v-if="entities.length > 0"
-            href="/ide#ncx-entities-header"
-            class="focus:ring focus:ring-slate-700 text-sm"
-            >Back to top</a
-          >
-        </footer>
-      </section>
-      <section class="my-4 max-w-full">
+      <EntitiesIDE />
+      <section id="ncx-business-rules" class="my-4 max-w-full">
         <header
           id="ncx-business-rules-header"
           class="lg:flex lg:justify-between max-w-full"
@@ -213,11 +178,13 @@
 
 <script>
 import { DocumentAddIcon } from "@heroicons/vue/outline";
+import EntitiesIDE from "@/components/EntitiesIDE.vue";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 import { ChevronUpIcon, PencilIcon } from "@heroicons/vue/solid";
 
 export default {
   components: {
+    EntitiesIDE,
     DocumentAddIcon,
     Disclosure,
     DisclosureButton,
